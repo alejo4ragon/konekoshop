@@ -1,0 +1,375 @@
+/* Estilos utilizando la paleta de colores directamente */
+
+/* Reset CSS básico */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+a,
+img,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: #ffc2bb;
+    /* Color2 */
+    color: #3b3b3b;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    /* Color3 */
+    color: #3b3b3b;
+    text-align: center;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    padding: 15px 25px;
+}
+
+nav li:hover {
+    background-color: #d76483;
+    color: #ffff;
+}
+
+/* main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+} */
+
+.info-banner {
+    background-color: #f6e5cb;
+    /* Color2 */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-banner img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: 300px;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.info-text h2 {
+    font-size: 45px;
+    color: #3b3b3b;
+}
+
+.info-text p {
+    font-size: 21px;
+    color: #3b3b3b;
+    line-height: 1.5;
+}
+
+
+.our-services {
+    background-color: #ffc2bb;
+    padding: 20px;
+}
+
+
+.our-services h2 {
+    font-size: 24px;
+    color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+/* Estilos para los servicios individuales */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.service img {
+    width: 50px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #3b3b3b;
+    /* Texto más oscuro para una mejor legibilidad */
+    text-align: center;
+    width: 150px;
+}
+
+.post {
+    background-color: #fcd0cf;
+    /* Color3 */
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.post h2 {
+    color: #3b3b3b;
+}
+
+.parallax {
+    background-image: url('../img/chainsaw-crew.png'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh; 
+}
+
+.parallax-video {
+    position: relative;
+    height: 70vh; /* Ajusta la altura de la sección según tus necesidades */
+    overflow: hidden;
+}
+
+.parallax-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.parallax-video img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 88px;
+    cursor: pointer;
+}
+
+.banner {
+    background-color: #d76483;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.categories {
+    background-color: #c3aaa5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.category {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ef9ca4;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffc2bb;
+    border: 1px solid #d76483;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.reservas{
+    background-color: #d76483;
+}
+
+.reservas .banner {
+    background-color: #d76483;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.reservas .reservation-form {
+    background-color: #c3aaa5;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservas form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reservas label {
+    margin-top: 10px;
+}
+
+.reservas input, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reservas button {
+    background-color: #ef9ca4;
+    color: white;
+    cursor: pointer;
+}
+
+.reservas button:hover {
+    background-color: #ffc2bb;
+}
+
+/* Modal de Confirmación */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #c3aaa5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #cfbdbf;
+    /* Color4 */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a2a9af;
+    /* Color5 */
+}
+
+footer {
+    background-color: #f1dbda;
+    /* Color2 */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+

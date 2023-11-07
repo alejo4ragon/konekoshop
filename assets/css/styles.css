@@ -22,7 +22,6 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f6e5cb;
 }
 
 h1,
@@ -88,6 +87,10 @@ nav li {
 nav li:hover {
     background-color: #d76483;
     color: #fff;
+}
+
+body.home{
+    background-color: #f6e5cb;
 }
 
 /* Banner informativo */
@@ -233,7 +236,6 @@ nav li:hover {
     color: white;
     text-align: center;
     padding: 20px;
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto;
 }
 
@@ -242,7 +244,6 @@ nav li:hover {
     display: flex;
     justify-content: center;
     padding: 10px;
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto;
 }
 
@@ -254,11 +255,11 @@ nav li:hover {
 }
 
 .menu {
+    background-color: #c3aaa5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto;
 }
 
@@ -284,7 +285,6 @@ nav li:hover {
 /* Reservas */
 .reservas {
     background-color: #d76483;
-    max-width: 1200px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto;
 }
 

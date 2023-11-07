@@ -373,3 +373,171 @@ footer {
     padding: 10px;
 }
 
+/* Estilos para pantallas grandes (por ejemplo, computadoras de escritorio) */
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    nav {
+        font-size: 25px;
+    }
+
+    nav li {
+        padding: 15px 25px;
+    }
+
+    .info-banner {
+        flex-direction: row;
+    }
+
+    .info-banner img {
+        width: 50%;
+    }
+
+    .info-text {
+        width: 50%;
+    }
+
+    .info-text h2 {
+        font-size: 45px;
+    }
+
+    .info-text p {
+        font-size: 21px;
+    }
+
+    .services {
+        gap: 100px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+/* Estilos para tablets y dispositivos medianos */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    nav li {
+        padding: 15px;
+    }
+
+    .info-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-banner img {
+        width: 80%;
+    }
+
+    .info-text {
+        width: 80%;
+    }
+
+    .info-text h2 {
+        font-size: 35px;
+    }
+
+    .info-text p {
+        font-size: 18px;
+    }
+
+    .services {
+        gap: 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Estilos para dispositivos móviles (por ejemplo, smartphones) */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+
+    nav li {
+        padding: 10px;
+    }
+
+    .info-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-banner img {
+        width: 90%;
+    }
+
+    .info-text {
+        width: 90%;
+    }
+
+    .info-text h2 {
+        font-size: 30px;
+    }
+
+    .info-text p {
+        font-size: 16px;
+    }
+
+    .services {
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .parallax {
+        height: 50vh;
+    }
+
+    .parallax-video {
+        height: 50vh;
+    }
+
+    .parallax-video img {
+        width: 60px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        margin: 5px;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+}

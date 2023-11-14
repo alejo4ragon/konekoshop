@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript App</title>
+
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #f6e5cb;
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .appjs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffc2bb;
+            color: #3b3b3b;
+        }
+
+        #opcionSelect {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #d76483;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3b3b3b;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            background-color: #d76483;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 20px;
+        }
+        
+        nav a.active {
+            color: black;
+            background-color: #fff;
+        }
+
+        nav a:hover {
+            color: black;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="appjs">
+
+        <nav>
+            <a href="javascript.html" class="active">JavaScript</a>
+            <a href="ajax.html">Ajax</a>
+        </nav>
+
+        <h2>Selecciona un ejercicio:</h2>
+
+        <select id="opcionSelect">
+            <option disabled selected>Selecciona</option>
+            <option value="1">1. Palíndromo</option>
+            <option value="2">2. Mayor de dos números</option>
+            <option value="3">3. Vocales en una frase</option>
+        </select>
+
+        <button type="button" id="resetButton">Resetear App</button>
+
+        <div id="resultado">KONEKO</div>
+    </div>
+    <script src="./assets/js/js-javascript.js"></script>
+</body>
+
+</html>
